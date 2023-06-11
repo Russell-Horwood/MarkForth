@@ -1,0 +1,113 @@
+* {
+    --copy-icon-margin: 0.5rem;
+    --copy-icon-width: 1.5rem;
+    --text-height: 1rem;
+    --text-padding: 1.5rem;
+}
+
+code {
+    color: var(--text-code);
+    background-color: var(--background-code);
+    border-color: var(--border-code);
+    border-width: var(--border-width);
+    border-style: solid;
+    border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
+    display: block;
+    font-size: var(--text-height);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: var(--text-padding);
+    padding-right: calc(var(--copy-icon-width) + var(--copy-icon-margin));
+    position: relative;
+}
+
+label {
+    background-color: var(--border-code);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    color: black;
+    display: inline-block;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-size: .8rem;
+    padding: 0.1rem 0.75rem;
+    border-top-width: var(--border-width);
+    border-left-width: var(--border-width);
+    border-right-width: var(--border-width);
+    margin-bottom: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+slot[name='code'] {
+    margin: 0;
+    overflow-x: auto;
+    word-wrap: break-word;
+}
+
+svg {
+    cursor: pointer;
+    fill: var(--text-primary);
+    padding: 0;
+    position: absolute;
+    opacity: 0.5;
+    right: var(--copy-icon-margin);
+    top: var(--copy-icon-margin);
+    width: var(--copy-icon-width);
+}
+
+svg:hover,
+focus {
+    opacity: 1;
+}
+
+svg.active {
+    --scale-to: 1.1;
+    animation: jiggle 1s linear;
+}
+
+@keyframes jiggle {
+    10% {
+        transform: rotate(0.05turn) scale(var(--scale-to));
+    }
+
+    20% {
+        fill: var(--text-code);
+        transform: rotate(-0.04turn) scale(var(--scale-to));
+    }
+
+    30% {
+        fill: var(--text-code);
+        transform: rotate(0.04turn) scale(var(--scale-to));
+    }
+
+    40% {
+        fill: var(--text-code);
+        transform: rotate(-0.03turn) scale(var(--scale-to));
+    }
+
+    50% {
+        fill: var(--text-code);
+        transform: rotate(0.03turn) scale(var(--scale-to));
+    }
+
+    60% {
+        fill: var(--text-code);
+        transform: rotate(-0.02turn) scale(var(--scale-to));
+    }
+
+    70% {
+        fill: var(--text-code);
+        transform: rotate(0.02turn) scale(var(--scale-to));
+    }
+
+    80% {
+        fill: var(--text-code);
+        transform: rotate(-0.01turn) scale(var(--scale-to));
+    }
+
+    90% {
+        transform: rotate(0.01turn) scale(var(--scale-to));
+    }
+}

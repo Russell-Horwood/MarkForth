@@ -1,0 +1,47 @@
+:root {
+    --background-code: #15232d;
+    --background-primary: #202124;
+    --background-secondary: #343434;
+    --border-code: #dadada;
+    --border-radius: 0.5rem;
+    --border-width: 0.08em;
+    --text-code: #ffe15d;
+    --text-link: #8cb4ff;
+    --text-primary: white;
+    --text-secondary: #cdcdcd;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--text-link);
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 50em;
+    padding: 2em;
+}
+
+body li:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+img {
+    display: block;
+    margin-bottom: 1em;
+    max-width: 100%;
+    max-height: 30em;
+}
+
+section {
+    margin-bottom: 3em;
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkForth", "MarkForth\MarkForth.csproj", "{B2F6115A-3793-4827-9F18-34C39DE39198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkForth.Console", "MarkForth.Console\MarkForth.Console.csproj", "{ABF73E18-9216-48D1-B47A-3C1C88474A70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkForth.Test", "MarkForth.Test\MarkForth.Test.csproj", "{0340CDF6-866E-48ED-891E-E611D5561341}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2F6115A-3793-4827-9F18-34C39DE39198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F6115A-3793-4827-9F18-34C39DE39198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F6115A-3793-4827-9F18-34C39DE39198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F6115A-3793-4827-9F18-34C39DE39198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF73E18-9216-48D1-B47A-3C1C88474A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF73E18-9216-48D1-B47A-3C1C88474A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF73E18-9216-48D1-B47A-3C1C88474A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF73E18-9216-48D1-B47A-3C1C88474A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0340CDF6-866E-48ED-891E-E611D5561341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0340CDF6-866E-48ED-891E-E611D5561341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0340CDF6-866E-48ED-891E-E611D5561341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0340CDF6-866E-48ED-891E-E611D5561341}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

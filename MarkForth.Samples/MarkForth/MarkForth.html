@@ -1,0 +1,65 @@
+<html>
+
+<body>
+    <table-of-contents></table-of-contents>
+    <section>
+        <h1>Hello MarkForth</h1>
+        <p>
+            This document was written in MarkForth.
+            With MarkForth you write a minimal input file using familiar HTML tags to define the semantic structure of the document only.
+            MarkForth will convert the input into a single HTML file that leverages the full power of HTML, CSS and JS.
+        </p>
+        <p>
+            It's like HTML and Markdown had a baby!
+        </p>
+    </section>
+    <section>
+        <h1>Features</h1>
+        <section>
+            <h1>Automatic Headers</h1>
+            <p>
+                Organise your content into <code>&lt;section&gt;</code> elements.
+                Define all your headers in <code>&lt;h1&gt;</code> tags.
+                MarkForth will automatically determine which header style to use based on nesting.
+                You will never need to go through your document changing <code>&lt;h2&gt;</code> to <code>&lt;h3&gt;</code> because you grouped some of your sections together.
+            </p>
+        </section>
+        <section>
+            <h1>Component System</h1>
+            <p>
+                MarkForth has a fully customisable component system.
+                Some pre-authored components are described below.
+            </p>
+            <section>
+                <h1>Table of Contents</h1>
+                <p>
+                    This component numbers all the section and subsections and generate a table of contents
+                    as seen at the top of this document.
+                </p>
+            </section>
+            <section>
+                <h1>Code Blocks</h1>
+                <p>
+                    This component displays blocks of code.
+                    There is a button to copy the code to the clipboard in the top-right corner.
+                </p>
+                <code-block>
+                    <span slot="code">
+                        "Hello MarkForth" | Write-Host
+                    </span>
+                </code-block>
+            </section>
+        </section>
+        <section>
+            <h1>Image Embedding</h1>
+            <p>
+                When HTML documents reference external images on the local filing system,
+                those images need to be transported with the document to be available when viewed from elsewhere.
+                MarkForth automatically embeds images in the output HTML for ultimate portability.
+            </p>
+            <img src="images/anImage.jpg" />
+        </section>
+    </section>
+</body>
+
+</html>
