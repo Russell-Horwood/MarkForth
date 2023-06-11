@@ -22,7 +22,6 @@ internal sealed class HtmlDocumentWriter : HtmlWriter
 
     #region Create.
 
-    // TODO: Comments
     internal static HtmlDocumentWriter Create(IServiceProvider serviceProvider, Stream stream)
     {
         return ActivatorUtilities.CreateInstance<HtmlDocumentWriter>

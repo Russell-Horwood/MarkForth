@@ -5,8 +5,6 @@ namespace MarkForth.Html;
 internal abstract class HtmlWriter : DelegatingTextWriter
 {
 
-    //TODO: Comments.
-
     #region Dependency Injection.
 
     private readonly HtmlContext _context;

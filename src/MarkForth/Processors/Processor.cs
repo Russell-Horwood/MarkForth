@@ -9,9 +9,6 @@ using Microsoft.Extensions.Logging;
 
 namespace MarkForth.Processors;
 
-
-// TODO: Formatting.
-
 internal sealed class Processor : IProcessor
 {
 
